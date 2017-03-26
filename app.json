@@ -1,0 +1,15 @@
+{
+    "name": "Fun with Elm",
+    "repository": "https://github.com/santichu95/elm_fun",
+    "env": {
+        "ELM_COMPILE": "elm make fun.elm --output elm.js"
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/srid/heroku-buildpack-elm.git"
+        },
+        {
+            "url": "https://github.com/hone/heroku-buildpack-static"
+        }
+    ]
+}
